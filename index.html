@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Product list with cart</title>
+  <!-- Red Hat Text font from google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+  <!----------------------------------------->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <header>
+    <h1 class="main-heading">Desserts</h1>
+  </header>
+  <main>
+    <section class="desserts-container" id="desserts-container"></section>
+    <section class="shopping-cart">
+      <h3 class="shopping-cart-heading">Your Cart (<span class="total-items" id="total-items">0</span>)</h3>
+      <img class="empty-cart-image" id="empty-cart-image" src="./assets/images/illustration-empty-cart.svg" alt="">
+      <p class="empty-cart-message" id="empty-cart-message">Your added items will appear here</p>
+      <div class="full-cart-container" id="full-cart-container">
+        <div class="added-items-container" id="added-items-container"></div>
+        <div class="order-total-container">Order Total <span id="order-total" class="order-total"></span></div>
+        <div class="carbon-neutral"><img class="tree-img" src="./assets/images/icon-carbon-neutral.svg" alt="">This is a <strong>&ThickSpace;carbon-neutral&ThickSpace;</strong> delivery</div>
+        <button class="confirm-order red-btn" id="confirm-order">Confirm Order</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a href="mailto:marwanmohammad432@gmail.com">Marwan Mohammed</a>.
+    </div>
+  </footer>
+  <div class="checkout" id="checkout">
+    <div>
+      <img src="./assets/images/icon-order-confirmed.svg" />
+      <h1>Order Confirmed</h1>
+      <p>We hope you enjoy your food</p>
+    </div>
+    <div class="confirmed-items-container">
+        <div class="confirmed-items" id="confirmed-items"></div>
+        <div class="order-total-container">Order Total<span id="confirmed-total" class="order-total"></span></div>
+    </div>  
+    <button class="start-new-order red-btn" id="start-new-order">Start New Order</button>
+  </div>
+  <div class="overlay" id="overlay"></div>
+  <script type="module" src="./data.json"></script>
+  <script type = "module" src="./main.js"></script>
+</body>
+</html>
